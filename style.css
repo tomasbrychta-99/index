@@ -1,0 +1,157 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.6;
+    color: #545454; /* Tmavě šedá */
+    background-color: #f9f9f9;
+}
+
+.container {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Navigace */
+header {
+    background-color: #ffffff;
+    border-bottom: 3px solid #d3ff99; /* Světle zelená */
+    padding: 20px 0;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-weight: 700;
+    font-size: 1.5rem;
+    color: #545454;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav ul li {
+    margin-left: 25px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #9b9b9b; /* Šedá */
+    font-weight: 400;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover, 
+nav ul li a.active {
+    color: #545454;
+    border-bottom: 2px solid #d3ff99;
+}
+
+/* Hero sekce */
+.hero {
+    position: relative;
+    height: 400px;
+    overflow: hidden;
+    margin-bottom: 40px;
+}
+
+.hero img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.hero-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: rgba(255, 255, 255, 0.8);
+    padding: 20px 40px;
+    text-align: center;
+}
+
+.hero h1 {
+    color: #545454;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+/* Obsah a Karty */
+.intro {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.intro h2 {
+    color: #545454;
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    margin-bottom: 50px;
+}
+
+.card {
+    background: #fff;
+    border: 1px solid #e1e1e1;
+    overflow: hidden;
+    transition: transform 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.card-content {
+    padding: 20px;
+}
+
+.card-content h3 {
+    margin-bottom: 15px;
+    color: #545454;
+}
+
+.btn {
+    display: inline-block;
+    background-color: #d3ff99;
+    color: #545454;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-weight: 700;
+    margin-top: 15px;
+    transition: background 0.3s;
+}
+
+.btn:hover {
+    background-color: #b8e67a;
+}
+
+/* Footer */
+footer {
+    background-color: #545454;
+    color: #ffffff;
+    text-align: center;
+    padding: 30px 0;
+    margin-top: 40px;
